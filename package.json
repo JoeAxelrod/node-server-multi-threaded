@@ -1,0 +1,25 @@
+{
+  "name": "server-multi-threaded",
+  "version": "1.0.0",
+  "description": "Multi-Threaded Node.js Server with Socket.IO and Redis ======================================================",
+  "main": "app.js",
+  "type": "module",
+"scripts": {
+    "start-server": "node app.js",
+    "test": "npm run start-server & sleep 3 && node --test server.test.js; kill $!"
+},
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cluster": "^0.7.7",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "os": "^0.1.2"
+  },
+  "devDependencies": {
+    "axios": "^1.6.3",
+    "vitest": "^1.1.0"
+  }
+}
