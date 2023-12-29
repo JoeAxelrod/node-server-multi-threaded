@@ -63,9 +63,11 @@ Log Output Example
 
 When running `node app.js`, the output will indicate the primary process and multiple worker processes starting up. For instance:
 
-kotlinCopy code
-
-`this machine has 8 CPUs Primary 11728 is running this machine has 8 CPUs Worker 11733 started ...`
+this machine has 8 CPUs  
+Primary 11728 is running  
+this machine has 8 CPUs  
+Worker 11733 started  
+...
 
 Note: The log "this machine has 8 CPUs" will appear multiple times due to the log being called in each worker process.
 
